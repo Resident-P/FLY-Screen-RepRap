@@ -3030,7 +3030,7 @@ static bool onButtonClick_Button10(ZKButton *pButton) {
 	sprintf(macros_print_patha,"M98 P\"0:/macros/");
 	sprintf(macros_print_path,"M98 P\"0:/macros/");
 	currmode = 1;
-	 Hardware_serial_transmission("M20 S2 P0:/macros\r\n");
+	Hardware_serial_transmission("M20 S2 P\"0:/macros\"\r\n");
 	// snprintf(macros_print_path, sizeof(macros_print_path), "M98 P\"0:/macros/");
 
 	 mboardsdPtr->setVisible(true);
